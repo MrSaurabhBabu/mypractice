@@ -1,0 +1,57 @@
+
+<html>
+	<head>
+		<title>Header Menu</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#topnav{
+					position:fixed;
+					top:0px;
+					height:50px;
+					width:auto;
+					background:aqua;	
+			}
+			#topnav a{
+					font-size:30px;
+					color:white;
+					text-decoration:none;
+					padding:10px 30px;	
+					float:left;
+					background:grey;
+			}
+			#topnav a:hover{
+					background:tomato;
+			}
+			#dropdown{float:left;height:auto;}
+			#dropdown a{diplay:block;float:none;padding:10px 30px;}
+			#dropdown:hover .elements{height:auto;}
+			.elements{height:0;overflow:hidden;}
+			.elements a{float:none;display:block;}
+			#service{
+				display:inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topnav">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<div id="dropdown">
+				<a href="#" id="service">Services</a>
+				<div class="elements">
+					<a>2012</a>
+					<a>2012</a>
+					<a>2012</a>
+					<a>2012</a>
+					<a>2012</a>
+					<a>2012</a>
+					<a>2012</a>
+				</div>
+				
+			</div>
+			<a id="change" href="#">Contact Us</a>
+		</div>
+	</body>
+</html>

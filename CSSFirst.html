@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>CSS First</title>
+			<style>
+				input{
+					width:200px;
+					height:20px;
+					padding:15px 10px;
+					border-radius:10px;
+					margin:10px;
+					border:1px solid transparent;
+					background:rgb(250,250,250);
+					transition:all .5s;
+				}
+				#submitBtn{
+					padding:10px 30px;
+					background:transparent;
+					border:1px solid cyan;
+					border-radius:20px;
+					transition:all .5s;
+				}
+				#submitBtn:hover{
+					background:cyan;
+					box-shadow:0 0 50px lightblue;
+				}
+				form{
+					padding:50px;
+					border:1px solid aqua;
+				}
+				h1{
+					text-align:center;
+				}
+				input:focus{outline:none;border:1px solid aqua;box-shadow:0 0 50px lightblue;}
+			</style>
+	</head>
+	<body>
+		<form>
+			<h1>Sign In</h1>
+			<table border="0px" align="center">
+				<tr>
+					<td><input  type="Email" placeholder="Email"></td>
+				</tr>
+				<tr>
+					<td><input type="Password" placeholder="Password"></td>
+				</tr>
+				<tr>
+					<td align="center"><button id="submitBtn" >Submit</button></td>
+				</tr>
+			
+			</table>
+		</form>
+	</body>
+</html>

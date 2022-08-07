@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>New Dropdown</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Main{
+				height:55.3px;
+				width:100%;
+			}
+			#Main a{
+				font-size:30px;
+				padding:10px 42.5px;
+				display:inline-block;
+				background:green;
+				float:left;
+				color:white;
+			}
+			#Main a:hover{
+				background:tomato;
+			}
+			#Service{
+				float:left;
+			}
+			#Service a{
+				float:none;
+				display:block;
+			}
+			#Service:hover #Option{
+				height:277.5px;
+			}
+			#Option{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+			}
+			#Contact{
+				float:left;
+			}
+			#Contact a{
+				float:none;
+				display:block;
+			}
+			#Contact:hover #ContactOpt{
+				height:277.5px;
+			}
+			#ContactOpt{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+			}
+			#Blogs{
+				float:left;
+			}
+			#Blogs a{
+				float:none;
+				display:block;
+			}
+			#Blogs:hover #BlogOpt{
+				height:277.5px;
+			}
+			#BlogOpt{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+			}
+			#BlogOpt a{
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<a>Home</a>
+			<a>About</a>
+			<div id="Blogs">
+				<a>Blog</a>
+				<div id="BlogOpt">
+					<a href="Saurabh.html" target="_blank">Saurabh's Blog</a>
+					<a href="Shivam.html" target="_blank">Shivam's Blog</a>
+					<a href="Rohan.html" target="_blank">Rohan's Blog</a>
+					<a href="Aditya.html" target="_blank">Aditya's Blog</a>
+				</div>
+			</div>
+			<div id="Service">
+				<a>Services</a>
+				<div id="Option">
+					<a>Web Design</a>
+					<a>Ethical Hacking</a>
+					<a>Programming</a>
+					<a>Youtube Guide</a>
+					<a>Software Developer</a>
+				</div>
+			</div>
+			<div id="Contact">
+				<a>Contact</a>
+				<div id="ContactOpt">
+					<a>9534615877</a>
+					<a>9534675878</a>
+					<a>9534618876</a>
+					<a>9534915875</a>
+					<a>9584615873</a>
+				</div>
+			</div>
+			<a>Help</a>
+		</div>
+	</body>
+</html>

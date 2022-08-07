@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Navigation Bar Practice</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Heading{
+				text-align:center;
+				font-size:20px;
+				background:rgb(10 200 20);
+				height:auto;
+				width:100%;
+				padding:8px;
+			}
+			#NavigationBar{
+				background:rgb(170 100 80);
+				height:46px;
+				width:100%;
+			}
+			#NavigationBar a{
+				font-size:25px;
+				padding:8.5px 40px;
+				font-family:courier;
+				float:left;
+				margin:0;
+				color:white;
+				cursor:hand;
+				text-align:center;
+			}
+			#NavigationBar a:hover{
+				background:tomato;
+				color:white;
+			}
+			#Services a{
+				display:block;
+				float:none;
+			}
+			#Services{
+				float:left;
+			}
+			#Options{
+				height:0;
+				overflow:hidden;
+				background:brown;
+				transition:.5s;
+			}
+			#Services:hover #Options{height:230px;}
+		</style>
+	</head>
+	<body>
+		<div id="Heading">
+			<h1>Saurabh Babu Bio</h1>
+		</div>
+		<div id="NavigationBar">
+			<a>Home</a>
+			<a>Experience</a>
+			<a>Gallery</a>
+			<div id="Services">
+				<a>My Services</a>
+				<div id="Options">
+					<a>Video Editing</a>
+					<a>Photo Editing</a>
+					<a>Ethical Hacking</a>
+					<a>Web Designing</a>
+					<a>Photography</a>
+				</div>
+			</div>
+			
+			<a>About</a>
+			<a>Contact Us</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Two DropDown</title>
+		<style>
+			#Main{
+				height:51px;
+				width:100%;
+				background:rgb(250 100 50);
+			}
+			#Main a{
+				background:rgb(250 100 50);
+				padding:10px 40px;
+				font-size:25px;
+				font-family:calibri;
+				float:left;
+				text-align:center;
+				color:white;
+			}
+			#Main a:hover{
+				background:green;
+			}
+			#Service{
+				float:left;
+			}
+			#Service a{
+				float:none;
+				display:block;
+			}
+			#ServiceOpt{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+				opacity:0;
+			}
+			#Service:hover #ServiceOpt{
+				height:280px;
+				opacity:1;
+				overflow:visible;
+			}
+			#PosterDgn{
+				position:relative;
+			}
+			#PosterDgnOpt{
+				position:absolute;
+				top:0px;
+				left:100%;
+				overflow:hidden;
+				height:0px;
+				width:auto;
+				background:coral;
+			}
+			#PosterDgn:hover #PosterDgnOpt{
+				height:auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<a>Home</a>
+			<a>About</a>
+			<div id="Service">
+				<a>Services</a>
+				<div id="ServiceOpt">
+					<a>Logo Design</a>
+					<a>Web Design</a>
+					<div id="PosterDgn">
+						<a>Poster Design</a>
+						<div id="PosterDgnOpt">
+							<a>3D Logo</a>
+							<a>Animate Logo</a>
+							<a>Normal Logo</a>
+						</div>
+					</div>
+					<a>Photography</a>
+				</div>
+			</div>
+			<a>Visits</a>
+			<a>Contact</a>
+			<a>Other</a>
+		</div>
+	</body>
+</html>

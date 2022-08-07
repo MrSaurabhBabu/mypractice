@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Search Box</title>
+		<style>
+			body{
+				background:rgb(200 100 150);
+			}
+			#search{
+				height:28px;
+				width:150px;
+				border-radius:30px;
+				border:2px solid red;
+				margin:5px;
+				padding:0 5px;
+				overflow:hidden;
+				background:white;
+				transition:.5s;
+				
+			}
+			#search:hover{
+				width:300px;
+			}
+			#search input{
+				width:80%;
+				font-size:18px;
+				margin:0;
+				background:transparent;
+				border-color:transparent;
+				float:left;
+			}
+			#search input:focus{
+				outline:none;
+			}
+			#search button{
+				height:100%;
+				width:18%;
+				background-image:url("Capture4.png");
+				background-repeat:no-repeat;
+				cursor:hand;
+				float:right;
+				border:none;
+				background:transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="search">
+			<input placeholder="Search">
+			<button> </button>
+		</div>
+	</body>
+</html>

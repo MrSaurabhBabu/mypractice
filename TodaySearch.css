@@ -1,0 +1,35 @@
+#Input{
+	height:40px;
+	width:15%;
+	border:2px solid green;
+	border-radius:30px;
+	overflow:hidden;
+	position:relative;
+	transition:.5s;
+}
+#Input input{
+	height:100%;
+	width:300px;
+	border:none;
+	float:left;
+	font-size:20px;
+	color:red;	
+}
+#Input input:focus{
+	outline:none;
+}
+#Input:hover{
+	width:30%;
+}
+#Input button{
+	height:100%;
+	width:65px;
+	border:none;
+	background:transparent;
+	background-image:url("download-removebg-preview.png");
+	background-repeat:no-repeat;
+	background-size:70%;
+	position:absolute;
+	right:0px;
+	cursor:hand;
+}

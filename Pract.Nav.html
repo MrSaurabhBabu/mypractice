@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Navigation Practice</title>
+		<style>
+			body{margin:0;}
+			#Navigation{}
+			#Navigation a{
+				font-size:20px;
+				padding:10 20px;
+				background:green;
+				color:white;
+				text-decoration:none;
+				float:left;
+			}
+			#Navigation a:hover{background:seagreen;}
+			#services a{
+				float:none;
+				display:block;
+			}
+			#services{
+				float:left;
+			}
+			#option{
+				height:0;
+				overflow:hidden;
+				background:aqua;
+			}
+			#services:hover #option{
+				height:217.5px;
+				transition:.5s;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Navigation">
+			<a href="#">home</a>
+			<a href="#">contact</a>
+			<div id="services">
+				<a href="#">services</a>
+				<div id="option">
+					<a href="#">motor</a>
+					<a href="#">Car</a>
+					<a href="#">cycle</a>
+					<a href="#">software</a>
+					<a href="#">hardware</a>
+				</div>
+			</div>
+			<a href="#">help</a>
+		</div>
+	</body>
+</html>

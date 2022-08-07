@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Drop Down</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Main{
+				height:auto;
+				width:100%;
+			}
+			#Main a{
+				background:green;
+				padding:10px 60px;
+				font-size:30px;
+				float:left;
+				text-align:center;
+				color:white;
+			}
+			#Main a:hover{
+				background:coral;
+			}
+			#Service{	
+				float:left;
+			}
+			#Service a{
+				float:none;
+				display:block;
+			}
+			#ServiceOpt{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+				background:red;
+			}
+			#Service:hover #ServiceOpt{
+				height:22px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<a>Home</a>
+			<a>About</a>
+			<div id="Service">
+			<a>Services</a>
+				<div id="ServiceOpt">
+					<a>Logo Design</a>
+					<a>Poster Design</a>
+					<a>Photography</a>
+					<a>Web Design</a>
+				</div>
+			</div>
+			<a>Blog</a>
+			<a>Contact</a>
+			<a>Help</a>
+		</div>
+	</body>
+</html>

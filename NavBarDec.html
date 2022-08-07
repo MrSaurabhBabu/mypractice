@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Navigation Bar Practice</title>
+		<style>
+			#NavigationBar{
+				background:dodgerblue;
+				height:55px;
+				width:100%;
+			}
+			#NavigationBar p{
+				font-size:30px;
+				padding:10 50px;
+				margin:0;
+				float:left;
+			}
+			#NavigationBar p:hover{
+				background:tomato;
+			}
+			#contactContainer{
+				float:left;
+			}
+			#contactContainer p{
+				float:none;
+				display:block;
+			}
+			#numbers{
+				background:dodgerblue;
+				height:0;
+				display:block;
+				overflow:hidden;
+				transition:.5s;
+			}
+			#contactContainer:hover #numbers{
+				height:275px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="NavigationBar">
+			<p>Company</p>
+			<p>Home</p>
+			<p>About</p>
+			<p>Gallery</p>
+			<div id="contactContainer">
+				<p>Contact</p>
+				<div id="numbers">
+					<p>9874563210</p>
+					<p>9874553210</p>
+					<p>9874563210</p>
+					<p>9874763210</p>
+					<p>9871563210</p>
+				</div>
+			</div>
+			<p>Other</p>
+		</div>
+	</body>
+</html>

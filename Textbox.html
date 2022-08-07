@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Text Box Design</title>
+		<style>
+			table{
+				text-align:center;
+				color:white;
+				border:1px solid black;
+				margin-top:80px;
+				padding:20px;
+				border-radius:10px;
+			}
+			body{
+				background-color:#2f2f2f;
+			}
+			input{
+				border-radius:10px;
+				text-align:center;
+				background:transparent;
+				border:1px solid white;
+				padding:3px 2px;
+				margin:3px;
+				color:white;
+			}
+			#con{
+				background:green;
+				padding:3px 61px;
+				border:none;
+				color:white;
+			}
+			.container{
+				background-image:url("218006_photo.jpg");
+				height:100%;
+				filter:blur(20px);
+			}
+			.text{
+				position:absolute;
+				z-index:1;
+				top:0px;
+				background-color:none;
+				margin-left:250px;
+			}
+			#hei{
+				padding-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"></div>
+		<div class="text"></div>
+		<table class="text" align="center">
+			<tr>
+				<td id="hei"><h2>Welcome</h2></td>
+			</tr>
+			<tr>
+				<td>Lorem ipsum dolor sit amet, consectetur adpising elit.</td>
+			</tr>
+			<tr> 
+				<td>Donec auctor neque sed pretium luctus.</td>
+			</tr>
+			<tr>
+				<td><input placeholder="Email Address"></td>
+			</tr>
+			<tr>
+				<td><input type="password" placeholder="*****"></td>
+			</tr>
+			<tr>
+				<td><input id="con" type="submit" value="Login"></td>
+			</tr>
+			<tr>
+				<td>Password &nbsp;| &nbsp;Register</td>
+			</tr>
+		</table>
+	</body>
+</html>

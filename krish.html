@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Button</title>
+	<style>
+		body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin:0;
+		}
+		#specialBtn{
+			margin:5px;
+			background:#20efee;
+			padding:40px 100px;
+			border-radius:20px;
+			border:none;
+			font-size:35px;
+			letter-spacing:2px;
+			position:relative;
+			transition:.2s;
+		}
+		#specialBtn:hover{
+			background:aqua;
+			cursor:hand;
+		}
+		#buttonText{
+			position:absolute;
+			top:20%;
+			left:30%;
+			transition:.2s ease;
+		}
+		#entity{
+			opacity:0;
+			transition:.2s;
+		}
+		#specialBtn:hover #buttonText{left:22%;}
+		#specialBtn:hover #entity{opacity:1;}
+	</style>
+</head>
+<body>
+	<button id="specialBtn"><span id="buttonText">Next <span id="entity">&#9656;</span></span></button>
+</body>
+</html>

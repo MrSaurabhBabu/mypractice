@@ -1,0 +1,57 @@
+<head>
+	<head>
+		<title>New Drop Down</title>
+		<style>
+			body{
+				margin:0px;
+			}
+			#Main{
+				height:60px;
+				width:100%;
+				background:dodgerblue;
+			}
+			#Main a{
+				padding:12.4px 56.5px;
+				font-size:30px;
+				display:inline-block;
+				float:left;
+			}
+			#Main a:hover{
+				background:rgb(250 80 30);
+			}
+			#Service{
+				float:left;
+			}
+			#Service a{
+				float:none;
+				display:block;
+			}
+			#Service:hover #Options{
+				height:240px;
+			}
+			#Options{
+				height:0;
+				overflow:hidden;
+				background:dodgerblue;
+				transition:.5s;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<a>Home</a>
+			<a>Blog</a>
+			<div id="Service">
+				<a>Services &#9660</a>
+				<div id="Options">
+					<a>Poster Design</a>
+					<a>Web Design</a>
+					<a>Social Media</a>
+					<a>Marketing</a>
+				</div>
+			</div>
+			<a>About</a>
+			<a>Contact Us</a>
+		</div>
+	</body>
+</head>
