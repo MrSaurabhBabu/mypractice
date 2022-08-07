@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Amazing Button</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#NxtBtn{
+				height:80px;
+				width:180px;
+				letter-spacing:1px;
+				font-size:40px;
+				background:#00e9f4c7;
+				border:none;
+				border-radius:10px;
+				position:relative;
+				box-shadow:0 5px 20px #9292928f;
+			}
+			#Entities{
+				opacity:0;
+				transition:.5s;
+			}
+			#NxtText{
+				position:absolute;
+				top:15%;
+				left:27%;
+				transition:.5s;
+			}
+			#NxtBtn:hover{
+				background:#06def4f7;
+				cursor:hand;
+			}
+			#NxtBtn:hover #NxtText{
+				left:30px;
+			}
+			#NxtBtn:hover #Entities{
+				opacity:1;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="NxtBtn"><span id="NxtText">Next <span id="Entities">&#9654;</span></span></button>
+	</body>
+</html>
