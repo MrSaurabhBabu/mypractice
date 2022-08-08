@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Block Navigation</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Main{
+				width:50px;
+				height:70px;
+				background:rgb(0 0 100);
+				overflow:hidden;
+				transition:.5s;
+			}
+			#Main a{
+				display:block;
+				color:white;
+				font-size:30px;
+				padding:15px;
+			}
+			#Main:hover{
+				width:200px;
+				height:260px;
+			}
+			#Main #Entity{
+				font-size:20px;
+			}
+			#Entity:hover{
+				display:none;
+			}
+			#Main a:hover{
+				background:#f43206d1;
+				border-right:5px solid #0cf608e0;
+			}
+			#Main:hover #Entity{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<a id="Entity">&#9776;</a>
+			<a>Home</a>
+			<a>About</a>
+			<a>Contact</a>
+			<a>Service</a>
+		</div>
+		
+	</body>
+</html>
