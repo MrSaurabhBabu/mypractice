@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Block Navigation</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Container{
+				background:#40a0af;
+				width:0%;
+				height:100%;
+				overflow:hidden;
+				transition:.5s;
+				position:relative;
+			}
+			#Container a{
+				display:block;
+				font-size:30px;
+				padding:18px 10px;
+				color:white;
+				transition:.3s;
+			}
+			#Container  a:first-child{
+				font-family:'Cooper Black';
+				color:#15ff55;
+			}
+			#Container a:not(:first-child):hover{
+				color:#15ff55;
+				padding-left:30px;
+				border-left:5px solid #15ff55;
+				cursor:hand;
+				background:rgba(0,0,0,.3);
+			}
+			label{
+				position:absolute;
+				left:0%;
+				transition:.5s;
+			}
+			label #DotEntity{
+				background:rgb(0 0 0);
+				color:white;
+				font-size:40px;
+				padding:10px;
+				text-align:center;
+				transition:.5s;
+			}
+			#DotEntity:hover{
+				color:#15ff55;
+			}
+			#Check:checked~#Container{
+				width:22%;
+			}
+			#Check:checked~label #DotEntity{
+				display:none;
+			}
+			#Check{
+				display:none;
+			}
+			label #CancelEntity{
+				background:rgb(0 0 0);
+				color:tomato;
+				font-size:40px;
+				padding:10px;
+				text-align:center;
+				display:none;
+				transition:.5s;
+			}
+			#Check:checked~label #CancelEntity{
+				display:block;
+			}
+			#Check:checked~label{
+				left:22%;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check"><a id="DotEntity">&#9776;</a><a id="CancelEntity">&#10006;</a></label>
+		<div id="Container">
+			<a>My Apps</a>
+			<a>Dashboard</a>
+			<a>My Profile</a>
+			<a>My Orders</a>
+			<a>Payment History</a>
+			<a>Contact Us</a>
+			<a>Career</a>
+			<a>Help</a>
+			<a>Other</a>
+		</div>
+	</body>
+</html>
