@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Block Navigation</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#Container{
+				height:100%;
+				width:0;
+				background:#40a0af;
+				overflow:hidden;
+				position:relative;
+				transition:.5s;
+			}
+			#Container a{
+				display:block;
+				font-size:30px;
+				padding:18px 10px;
+				color:white;
+				transition:.2s;
+				text-decoration:none;
+			}
+			#Container a:first-child{
+				font-family:Cooper black;
+				color:#15ff55;
+				font-size:40px;
+			}
+			#Container a:not(:first-child):hover{
+				color:#15ff55;
+				padding-left:25px;
+				border-left:5px solid #15ff55;
+				cursor:hand;
+				background:rgba(0,0,0,.3);
+			}
+			#LineEntity{
+				background:rgb(0 0 0);
+				font-size:40px;
+				color:white;
+				padding:10px;
+				transition:.5s;
+			}
+			#LineEntity:hover{
+				color:#15ff55;
+			}
+			#CancelEntity{
+				background:rgb(0 0 0);
+				font-size:40px;
+				color:white;
+				padding:10px;
+				display:none;
+				transition;.5s;
+				color:tomato;
+			}
+			label{
+				position:absolute;
+				left:0;
+				transition:.5s;
+			}
+			#Check:checked~#Container{
+				width:22%;
+			}
+			#Check{
+				display:none;
+			}
+			#Check:checked~label{
+				left:22%;
+			}
+			#Check:checked~label #LineEntity{
+				display:none;
+			}
+			#Check:checked~label #CancelEntity{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check"><a id="LineEntity">&#9776;</a><a id="CancelEntity">&#10006;</a></label>
+		<div id="Container">
+			<a>My Apps</a>
+			<a>Dashboard</a>
+			<a href="https://bit.ly/3bR6aBt" target="_blank">My Profile</a>
+			<a>My Orders</a>
+			<a>Payment History</a>
+			<a>Contact Us</a>
+			<a>Career</a>
+			<a>Help</a>
+			<a href="https://spoti.fi/3poGcZ7" target="_blank">Listen Now</a>
+		</div>
+	</body>
+</html>
