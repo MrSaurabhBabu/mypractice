@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Slider Practice</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			#Container{
+				height:150px;
+				width:400px;
+				border:5px solid white;
+				border-radius:100px;
+				box-shadow:0 0 5px grey;
+				position:relative;
+				cursor:hand;
+				transition:.3s;
+				overflow:hidden;
+			}
+			#Slider{
+				height:140px;
+				width:140px;
+				border-radius:75px;
+				box-shadow:0 0 5px grey;
+				margin:5px;
+				position:absolute;
+				left:0px;
+				transition:.5s;
+				background:white;
+			}
+			#Check:checked~label #Container #Slider{
+				left:250px;
+			}
+			#Check:checked~label #Container{
+				background:green;
+			}
+			#Check{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check">
+			<div id="Container">
+				<div id="Slider"> </div>
+			</div>
+		</label>
+	</body>
+</html>
