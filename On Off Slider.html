@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>On Off Slider</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#MainContainer{
+				height:40px;
+				width:150px;
+				background:grey;
+				border-radius:50px;
+				position:relative;
+				transition:.5s;
+				box-shadow:0 0 5px grey;
+			}
+			#MainContainer::before{
+				content:"";
+				height:70px;
+				width:70px;
+				background:#06bdf4;
+				position:absolute;
+				top:-15;
+				left:0;
+				border-radius:50px;
+				box-shadow:0 0 10px #06f4658c;
+				transition:.5s;
+			}
+			#Check:checked~label #MainContainer::before{
+				left:80px;
+			}
+			#Check:checked~label #MainContainer{
+				background:#065af4c4;
+			}
+			#Check{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check">
+			<div id="MainContainer">
+				
+			</div>
+		</label>
+	</body>
+</html>
