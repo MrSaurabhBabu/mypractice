@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Calculator Design</title>
+		<style>
+			body{
+				background:#15ff55;
+				margin:0;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			table{
+				height:400px;
+				width:300px;
+				border:1px solid white;
+				border-top:none;
+				box-shadow:3px 2px 5px grey;
+			}
+			table td{
+				border:1px solid white;
+				height:50px;
+				width:50px;
+				text-align:center;
+				font-weight:bold;
+				font-size:25px;
+				font-family:arial;
+			}
+			table td:not(:first-child){
+				cursor:hand;
+			}
+			#Name p{
+				position:absolute;
+				top:0;
+				left:44%;
+				font-size:40px;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Name"><p>Calculator</p></div>
+		<table border="1px" bgcolor="skyblue" align="center" cellspacing="0px">
+			<tr>
+				<td colspan="4" bgcolor="black"></td>
+				<!-- <td></td>
+				<td></td>
+				<td></td> -->
+			</tr>
+			<tr>
+				<td colspan="2">C</td>
+				<!-- <td></td> -->
+				<td>DEL</td>
+				<td>+</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>*</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>+</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>.</td>
+				<td>0</td>
+				<td colspan="2">=</td>
+				<!-- <td></td> -->
+			</tr>
+		</table>
+	</body>
+</html>

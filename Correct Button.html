@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Button</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#MainContainer{
+				height:50px;
+				width:50px;
+				border-radius:10px;
+				position:relative;
+				border:2px solid grey;
+				transition:border .5s ease .1s;
+				cursor:hand;
+			}
+			#MainContainer p{
+				background:transparent;
+				border:none;
+				font-size:40px;
+				position:absolute;
+				top:-42px;
+				left:9px;
+				color:rgba(0,0,0,.5);
+				transition:color .5s ease .1s;
+			}
+			#Check:checked~label #MainContainer p{
+				color:green;
+			}
+			#Check:checked~label #MainContainer{
+				border-color:green;
+			}
+			#Check{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check">
+			<div id="MainContainer">
+				<p>&#10004;</p>
+			</div>
+		</label>
+	</body>
+</html>
