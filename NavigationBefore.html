@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Block Navigation</title>
+		<style>
+			body{
+				margin:0;
+			}
+			#MainContainer{
+				height:100%;
+				width:0;
+				background:#40a0af;
+				overflow:hidden;
+				transition:.4s;
+			}
+			#MainContainer a{
+				display:block;
+				font-size:30px;
+				padding:15px 10px;
+				cursor:hand;
+				transition:.2s;
+				color:white;
+			}
+			#MainContainer a:first-child{
+				font-size:35px;
+				font-family:Bradley Hand ITC;
+				font-weight:bold;
+				color:#15ff55;
+			}
+			#MainContainer a:not(:first-child):hover{
+				padding-left:20px;
+				color:#15ff55;
+				border-left:5px solid #15ff55;
+			}
+			#DotEntity{
+				font-size:40px;
+				font-weight:bold;
+				background:rgb(0 0 0);
+				color:white;
+				padding:7px;
+			}
+			#Cancel{
+				font-size:40px;
+				font-weight:bold;
+				background:rgb(0 0 0);
+				color:white;
+				padding:7px;
+				display:none;
+			}
+			#DotEntity:hover{
+				color:#15ff55;
+			}
+			#Cancel:hover{
+				color:tomato;
+			}
+			label{
+				position:absolute;
+				left:0;
+				transition:.4s;
+			}
+			#Check{
+				display:none;
+			}
+			#Check:checked~#MainContainer{
+				width:20%;
+			}
+			#Check:checked~label{
+				left:20%;
+			}
+			#Check:checked~label #Cancel{
+				display:block;
+			}
+			#Check:checked~label #DotEntity{
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="Check">
+		<label for="Check"><a id="DotEntity">&#9776;</a> <a id="Cancel">&#10008;</a></label>
+		<div id="MainContainer">
+			<a>My Apps</a>
+			<a>Home</a>
+			<a>Dashboard</a>
+			<a>My Profile</a>
+			<a>Contact</a>
+			<a>Visit</a>
+			<a>Listen Now</a>
+			<a>Blog</a>
+			<a>Other</a>
+		</div>
+	</body>
+</html>
