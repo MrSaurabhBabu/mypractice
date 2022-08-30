@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Calculator Using Div</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background:white;
+			}
+			#Main{
+				height:325px;
+				width:247px;
+				display:flex;
+				flex-wrap:wrap;
+				justify-content:space-between;
+				align-content:space-between;
+				background:white;
+				box-shadow:0 0 6px grey;
+			}
+			#Main div:first-child{
+				height:52px;
+				width:255px;
+				background:brown;
+				border-left:1px solid white;
+				border-right:1px solid white;
+				border-top:1px solid brown;
+			}
+			#Main .Btn{
+				height:52px;
+				width:60px;
+				background:green;
+				font-size:20px;
+				text-align:center;
+				color:white;
+				font-weight:bold;
+				transition:.3s;
+			}
+			#Main div:not(:first-child):hover{
+				background:rgba(80,200,0,.8);
+				color:green;
+				box-shadow:0 0 5px black inset;
+			}
+			#Main div:nth-child(2){
+				width:122px;
+			}
+			#Main div:last-child{
+				width:122px;
+			}
+			#Main div:not(:first-child){
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Main">
+			<div></div>
+			<div class="Btn">C</div>
+			<div class="Btn">DEL</div>
+			<div class="Btn">-</div>
+			<div class="Btn">1</div>
+			<div class="Btn">2</div>
+			<div class="Btn">3</div>
+			<div class="Btn">*</div>
+			<div class="Btn">4</div>
+			<div class="Btn">5</div>
+			<div class="Btn">6</div>
+			<div class="Btn">+</div>
+			<div class="Btn">7</div>
+			<div class="Btn">8</div>
+			<div class="Btn">9</div>
+			<div class="Btn">-</div>
+			<div class="Btn">.</div>
+			<div class="Btn">0</div>
+			<div class="Btn">=</div>
+		</div>
+	</body>
+</html>
