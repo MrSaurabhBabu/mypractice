@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title>Login & Register Form</title>
+		<style>
+			body{
+				margin:0;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				flex-direction:column;
+			}
+			#Register{
+				height:400px;
+				width:400px;
+				background:#15ff55;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				flex-direction:column;
+				border-radius:15px;
+			}
+			#Register a{
+				display:block;
+				font-size:30px;
+				font-family:arial;
+				font-weight:bold;
+				text-align:center;
+			}
+			#Register input{
+				display:block;
+				height:30px;
+				width:275px;
+				margin:10px 0;
+				border-radius:30px;
+				font-size:18px;
+				outline:none;
+				border:none;
+			}
+			.Btn button{
+				padding:7px 25px;
+				font-size:18px;
+				background:rgb(190 25 10);
+				border:none;
+				border-radius:10px;
+				color:white;
+				margin:5px 5px;
+			}
+			.Buttons{
+				margin:10px 5px;
+				font-size:18px;
+				background:rgb(170 150 10);
+				border:none;
+				border-radius:5px;
+				padding:7px 25px;
+				color:white;
+			}
+			#ParentContainer{
+				height:400px;
+				width:400px;
+				background:#15ff55;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				flex-direction:column;
+				border-radius:15px;
+			}
+			#SignIn{
+				background:#15ff55;
+				height:400px;
+				width:400px;
+				border-radius:15px;
+				display:none;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+			}
+			#SignIn input{
+				display:block;
+				height:30px;
+				width:275px;
+				margin:10px 0;
+				border-radius:30px;
+				font-size:18px;
+				outline:none;
+				border:none;
+			}
+			#SignIn a{
+				display:block;
+				font-size:30px;
+				font-family:arial;
+				font-weight:bold;
+				text-align:center;
+			}
+			#check{
+				display:none;
+			}
+			#check:checked~#ParentContainer #Register{
+				display:none;
+			}
+			#check:checked~#ParentContainer #SignIn{
+				display:flex;
+			}
+			#Container{
+				margin:10px;
+			}
+			label{
+				margin:10px;
+			}
+		</style>
+	</head>
+	<body>
+			<label for="check"><a class="Buttons">Register</a><a class="Buttons">SignIn</a></label>
+			<input type="checkbox" id="check">
+			
+		
+		<div id="ParentContainer">
+			<div id="Register">
+				<a>Register</a>
+				<input type="text" placeholder=" Name">
+				<input type="Email" placeholder=" Email">
+				<input type="password" placeholder=" Password">
+				<input type="password" placeholder=" Confirm Password">
+				<input type="text" placeholder=" Contact No.">
+				<div class="Btn">
+					<button>Register</button>
+					<button>Cancel</button>
+				</div>
+			</div>
+			<div id="SignIn">
+				<a>Sign In</a>
+				<input type="Email" placeholder=" Email">
+				<input type="Password" placeholder=" Password">
+				<div class="Btn">
+					<button>Sign In</button>
+					<button>Cancel</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
