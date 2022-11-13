@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<title>Register Form</title>
+		<style>
+			body{
+				margin:0;
+				justify-content:center;
+				align-items:center;
+				display:flex;
+				background:dodgerblue;
+			}
+			#MainContainer{
+				background:white;
+				height:550px;
+				width:40%;
+				border-radius:10px;
+				box-shadow:0px 0px 10px grey,0px 0px 10px grey,0px 0px 10px grey;
+			}
+			#Heading{
+				height:8%;
+				width:100%;
+				text-align:center;
+				font-weight:bold;
+				font-size:25px;
+				font-family:arial;
+				background:rgba(0,0,0,0.1);
+				padding-top:10px;
+				border-radius:10px 10px 0px 0px;
+			}
+			.Inputs{
+				display:flex;
+				justify-content:space-between;
+			}
+			.InputOpt a{
+				display:block;
+			}
+			.InputOpt{
+				width:50%;
+			}
+			.Inputs,#EmailID{
+				width:80%;
+			}
+			#EmailOpt input{
+				width:80%;
+			}
+			#ParentCont{
+				height:80%;
+				width:100%;
+				background:white;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				flex-direction:column;
+			}
+			#btn{
+				height:10%;
+				width:100%;
+				text-align:center;
+				font-weight:bold;
+				font-family:arial;
+				background:rgba(0,0,0,0.1);
+				border-radius:0px 0px 10px 10px;
+			}
+			.Colours{
+				color:green;
+				font-weight:bold;
+				font-family:arial;
+				font-size:15px;
+			}
+			input:not(#nor){
+				border-radius:5px;
+				outline:none;
+				border:1px solid black;
+			}
+			input{
+				padding-left:5px;
+			}
+			.WidthChng{
+				width:95%;
+			}
+			#btns{
+				position:relative;
+				bottom:5px;
+				height:25px;
+				width:40px;
+				color:white;
+				background:green;
+				border:none;
+				border-radius:5px;
+			}
+			#BigWidth{
+				width:98%;
+			}
+			textarea{
+				width:100%;
+				border-radius:5px;
+				outline:none;
+				height:50px;
+			}
+			.Half{
+				width:50%;
+			}
+			#Small{
+				width:78%;
+			}
+			#Smalls{
+				font-size:13px;
+				width:75%;
+			}
+			select{
+				width:200px;
+				border-radius:5px;
+			}
+			#creates{
+				position:relative;
+				left:150px;
+				top:10px;
+				height:30px;
+				width:100px;
+				background:green;
+				color:white;
+				border-radius:5px;
+				border:none;
+				transition:.5s;
+			}
+			#creates:hover{
+				transform:translate(5px,0px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="MainContainer">
+			<div id="Heading">
+				Create Account
+			</div>
+			<div id="ParentCont">
+				<div class="Inputs">
+					<div class="InputOpt">
+						<a class="Colours">First Name*</a>
+						<input class="WidthChng" type="text" placeholder="Enter Your First Name">
+					</div>
+					<div class="InputOpt">
+						<a class="Colours">Last Name</a>
+						<input class="WidthChng" type="text" placeholder="Enter Your Last Name">
+					</div>
+				</div>
+				<div class="InputOpt" id="EmailID">
+					<a class="Colours">Email*</a>
+					<input id="BigWidth" type="Email" placeholder="Enter Your Email">
+				</div>
+				<div class="Inputs">
+					<div class="InputOpt">
+						<a class="Colours">Password*</a>
+						<input class="WidthChng" type="Password" placeholder="Enter Your Password">
+					</div>
+					<div class="InputOpt">
+						<a class="Colours">Confirm Password*</a>
+						<input class="WidthChng" type="Password" placeholder="Enter Your Password Again">
+					</div>
+				</div>
+				<div class="Inputs">
+					<div class="Half">
+						<a class="Colours">Gender</a><br>
+						<input type="Radio" name="Gender">
+						<a>Male</a>
+						<input type="Radio" name="Gender">
+						<a>Female</a>
+					</div>
+					<div class="Half" id="Smalls">
+						<a class="Colours">Hobbies</a><br>
+						<input type="checkbox">
+						<a>Music</a>
+						<input type="checkbox">
+						<a>Sports</a>
+						<input type="checkbox">
+						<a>Travel</a>
+						<input type="checkbox">
+						<a>Movies</a>
+					</div>
+				</div>
+				<div class="Inputs">
+					<div class="InputOpt">
+						<a class="Colours">Source Of Income</a>
+						<select>
+							<option>Employed</option>
+							<option>Student</option>
+							<option>Berojgar</option>
+							<option>Salaried</option>
+						</select>
+					</div>
+					<div class="InputOpt">
+						<a class="Colours">Income</a>
+						<input class="WidthChng" id="Small" type="range"><button id="btns">2K</button>
+					</div>
+				</div>
+				<div class="Inputs">
+					<div class="InputOpt">
+						<a class="Colours">Upload Profile Picture</a>
+						<input id="nor" type="file">
+					</div>
+					<div class="InputOpt">
+						<a class="Colours">Age</a>
+						<input class="WidthChng" type="text">
+					</div>
+				</div>
+				<div class="InputOpt" id="EmailID">
+					<a class="Colours">Bio</a>
+					<textarea></textarea>
+				</div>
+			</div>
+			<div id="btn">
+				<button id="creates">Create</button>
+			</div>
+		</div>
+	</body>
+</html>
