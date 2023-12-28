@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Javascript Practice</title>
+		<style>
+			button{
+				background:#15ff55;
+				height:35px;
+				width:370px;
+				border-radius:10px;
+				outline:none;
+				border:none;
+				font-size:18px;
+			}
+			h2{
+				text-align:center;
+			}
+		</style>
+		<script>
+			function myFun(){
+				document.getElementById('demo').innerHTML = Date();
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Javascript First Program</h2>
+		<button type="button" onclick="myFun()">Click me to display Date and Time.</button>
+
+		<p id="demo"></p>
+	</body>
+</html>
